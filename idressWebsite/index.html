@@ -32,11 +32,35 @@
             }
             .carousel-indicators li {
                 border-radius: 12px;
-                width: 12px;
-                height: 12px;
+                width: 8px;
+                height: 8px;
                 background-color: #404040;
             }
 
+            .btn1{
+                background-color: #494D6A;
+            }
+
+            .btn1:hover{
+                background-color: black;
+            }
+
+            .btn2{
+                background-color: #A6A3A4;
+            }
+
+            .btn2:hover{
+                background-color: black;
+            }
+
+            .btn3{
+                background-color: #FFE76C;
+            }
+
+            .btn3:hover{
+                background-color: black;
+            }
+            
             #godown{
                 height: 60px;
             }
@@ -58,6 +82,9 @@
     <!-- Top Navigation bar starts-->
 
     <nav class="navbar navbar-light navbar-expand-md bg-light fixed-top">
+        <a class="navbar-brand" href="#">
+            <img src="C:\Users\Lenovo\Documents\GitHub\idress\idressWebsite\images\idress2.png" width="50px" alt="">
+        </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
@@ -109,76 +136,81 @@
 
     <!-- Showcase Slideshow Starts-->
 
-    <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel" data-interval="6000">
-        <ol class="carousel-indicators">
-            <li data-target="#carousel" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel" data-slide-to="1"></li>
-            <li data-target="#carousel" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner" role="listbox">
-            <div class="carousel-item active">
-                <a href="#">
-                     <picture>
-                      <source srcset="C:\Users\Lenovo\Documents\GitHub\idress\idressWebsite\images\model2000x857.png" media="(min-width: 1400px)">
-                      <source srcset="C:\Users\Lenovo\Documents\GitHub\idress\idressWebsite\images\model1400x514.png" media="(min-width: 769px)">
-                       <source srcset="C:\Users\Lenovo\Documents\GitHub\idress\idressWebsite\images\model800x343.png" media="(min-width: 577px)">
-                      <img srcset="C:\Users\Lenovo\Documents\GitHub\idress\idressWebsite\images\model600x257.png" alt="responsive image" class="d-block img-fluid">
-                    </picture>
+    <div class="container-fluid" style="padding-right:0; padding-left:0; margin-right:auto; margin-left:auto;">
+        <div class="row no-gutter">
+            <div class="col">
+                <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel" data-interval="6000">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel" data-slide-to="1"></li>
+                        <li data-target="#carousel" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                            <a href="#">
+                                <picture>
+                                <source srcset="C:\Users\Lenovo\Documents\GitHub\idress\idressWebsite\images\model2000x857.png" media="(min-width: 1400px)">
+                                <source srcset="C:\Users\Lenovo\Documents\GitHub\idress\idressWebsite\images\model1400x514.png" media="(min-width: 769px)">
+                                <source srcset="C:\Users\Lenovo\Documents\GitHub\idress\idressWebsite\images\model800x343.png" media="(min-width: 577px)">
+                                <img srcset="C:\Users\Lenovo\Documents\GitHub\idress\idressWebsite\images\model600x257.png" alt="responsive image" class="d-block img-fluid">
+                                </picture>
 
-                    <div class="carousel-caption">
-                        <div style="color: black;">
-                            <p style="font-weight: bold; font-size: 3vw;">New Arrivals <br> From Pakistan's Top Brands</p>
-                        
-                            <span class="btn btn-sm btn-secondary" style="font-weight: bold; font-size: 3vw; background-color: #494D6A; color: white;"> Avaliable Now!</span>
+                                <div class="carousel-caption">
+                                    <div style="color: black;">
+                                        <p style="font-weight: bold; font-size: 3vw;">New Arrivals <br> From Pakistan's Top Brands</p>
+                                    
+                                        <span class="btn btn1" style="font-weight: bold; font-size: 3vw; color: white;"> Avaliable Now!</span>
+                                    </div>
+                                </div>
+
+                            </a>
                         </div>
-                    </div>
 
-                </a>
-            </div>
+                        <div class="carousel-item">
+                            <a href="#">
+                                <picture>
+                                <source srcset="C:\Users\Lenovo\Documents\GitHub\idress\idressWebsite\images\kid2000x857.png" media="(min-width: 1400px)">
+                                <source srcset="C:\Users\Lenovo\Documents\GitHub\idress\idressWebsite\images\kid1400x514.png" media="(min-width: 769px)">
+                                <source srcset="C:\Users\Lenovo\Documents\GitHub\idress\idressWebsite\images\kid800x343.png" media="(min-width: 577px)">
+                                <img srcset="C:\Users\Lenovo\Documents\GitHub\idress\idressWebsite\images\kid600x257.png" alt="responsive image" class="d-block img-fluid">
+                                </picture>
 
-            <div class="carousel-item">
-                <a href="#">
-                     <picture>
-                      <source srcset="C:\Users\Lenovo\Documents\GitHub\idress\idressWebsite\images\kid2000x857.png" media="(min-width: 1400px)">
-                      <source srcset="C:\Users\Lenovo\Documents\GitHub\idress\idressWebsite\images\kid1400x514.png" media="(min-width: 769px)">
-                       <source srcset="C:\Users\Lenovo\Documents\GitHub\idress\idressWebsite\images\kid800x343.png" media="(min-width: 577px)">
-                      <img srcset="C:\Users\Lenovo\Documents\GitHub\idress\idressWebsite\images\kid600x257.png" alt="responsive image" class="d-block img-fluid">
-                    </picture>
+                                <div class="carousel-caption carousel-caption-custom-right">
+                                    <div style="color: black;">
+                                        <p style="font-weight: bold; font-size: 3vw;">New Arrivals <br> From Pakistan's Top Brands</p>
+                                    
+                                        <span class="btn btn2" style="font-weight: bold; font-size: 3vw; color: white;"> Avaliable Now!</span>
 
-                    <div class="carousel-caption carousel-caption-custom-right">
-                        <div style="color: black;">
-                            <p style="font-weight: bold; font-size: 3vw;">New Arrivals <br> From Pakistan's Top Brands</p>
-                        
-                            <span class="btn btn-sm btn-secondary" style="font-weight: bold; font-size: 3vw; background-color: #D1CDC3; color: white;"> Avaliable Now!</span>
+                                    </div>
+                                </div>
 
+                            </a>
                         </div>
-                    </div>
 
-                </a>
-            </div>
+                        <div class="carousel-item">
+                            <a href="#">
+                                <picture>
+                                <source srcset="C:\Users\Lenovo\Documents\GitHub\idress\idressWebsite\images\show2000x857.png" media="(min-width: 1400px)">
+                                <source srcset="C:\Users\Lenovo\Documents\GitHub\idress\idressWebsite\images\show1400x514.png" media="(min-width: 769px)">
+                                <source srcset="C:\Users\Lenovo\Documents\GitHub\idress\idressWebsite\images\show800x343.png" media="(min-width: 577px)">
+                                <img srcset="C:\Users\Lenovo\Documents\GitHub\idress\idressWebsite\images\show600x257.png" alt="responsive image" class="d-block img-fluid">
+                                </picture>
 
-            <div class="carousel-item">
-                <a href="#">
-                     <picture>
-                      <source srcset="C:\Users\Lenovo\Documents\GitHub\idress\idressWebsite\images\show2000x857.png" media="(min-width: 1400px)">
-                      <source srcset="C:\Users\Lenovo\Documents\GitHub\idress\idressWebsite\images\show1400x514.png" media="(min-width: 769px)">
-                       <source srcset="C:\Users\Lenovo\Documents\GitHub\idress\idressWebsite\images\show800x343.png" media="(min-width: 577px)">
-                      <img srcset="C:\Users\Lenovo\Documents\GitHub\idress\idressWebsite\images\show600x257.png" alt="responsive image" class="d-block img-fluid">
-                    </picture>
+                                <div class="carousel-caption" style="right: 15%; text-align: right; max-width: 370px; left: auto; padding:5px; top:30%; bottom: auto;">
+                                    <div style="color: black;">
+                                        <p style="font-weight: bold; font-size: 3vw;">New Arrivals <br> From Pakistan's Top Brands</p>
+                                    
+                                        <span class="btn btn3" style="font-weight: bold; font-size: 3vw; color: white;"> Avaliable Now!</span>
 
-                    <div class="carousel-caption" style="right: 15%; text-align: right; max-width: 370px; left: auto; padding:5px; top:30%; bottom: auto;">
-                        <div style="color: black;">
-                            <p style="font-weight: bold; font-size: 3vw;">New Arrivals <br> From Pakistan's Top Brands</p>
-                        
-                            <span class="btn btn-sm btn-secondary" style="font-weight: bold; font-size: 3vw; background-color: #FFE76C; color: white;"> Avaliable Now!</span>
-
+                                    </div>
+                                </div>
+                            </a>
                         </div>
-                    </div>
-                </a>
+                    </div>      
+                </div>
             </div>
-        </div>      
+        </div>
     </div>
-
 
     <!--Showcase Slideshow ends-->
         
