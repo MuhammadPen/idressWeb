@@ -11,53 +11,177 @@
     <style>
             .list-group, .list-group-item{
                 display: block;
+                background-color: #F9F9F9;
             }
+
+            .navbar{
+                -webkit-box-shadow: 0px 2px 10px -1px rgba(112,112,112,1);
+                -moz-box-shadow: 0px 2px 10px -1px rgba(112,112,112,1);
+                box-shadow: 0px 2px 10px -1px rgba(112,112,112,1);
+
+            }
+
+           .carousel-caption {
+                left: 10%;
+                text-align: left;
+                max-width: 370px;
+                right: auto;
+                padding:5px;
+                top:30%;
+                bottom: auto;
+            }
+            .carousel-indicators li {
+                border-radius: 12px;
+                width: 12px;
+                height: 12px;
+                background-color: #404040;
+            }
+
+            #godown{
+                height: 60px;
+            }
+            
     </style>
+
+    <script>
+    
+    $("#navMenu").resize(function () {
+        $('#godown').height($("#navMenu").height() + 10);
+    });
+
+    if ($("#navMenu").height() > $('#godown').height()) $('#godown').height($("#navMenu").height() + 10);
+    
+    </script>
 </head>
 <body>
 
-        <nav class="navbar navbar-light navbar-expand-md bg-light">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
+    <!-- Top Navigation bar starts-->
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <div class="container-fluid">
-                    <ul class="navbar-nav mr-auto list-group">
-                        <li class="nav-item dropdown list-group-item">
-                            <div class="row" style="text-align: center;">
-                                <div class="col">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Men</a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="#">Gul Ahmad</a>
-                                        <a class="dropdown-item" href="#">Al Kareem</a>
-                                        <a class="dropdown-item" href="#">Khadi</a>
-                                    </div>
-                                </div>
+    <nav class="navbar navbar-light navbar-expand-md bg-light fixed-top">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
 
-                                <div class="col">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Men</a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="#">Gul Ahmad</a>
-                                        <a class="dropdown-item" href="#">Al Kareem</a>
-                                        <a class="dropdown-item" href="#">Khadi</a>
-                                    </div>
-                                </div>
-
-                                <div class="col">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Men</a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="#">Gul Ahmad</a>
-                                        <a class="dropdown-item" href="#">Al Kareem</a>
-                                        <a class="dropdown-item" href="#">Khadi</a>
-                                    </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="container-fluid">
+                <ul class="navbar-nav mr-auto list-group">
+                    <li class="nav-item dropdown list-group-item">
+                        <div class="row" style="text-align: center; background-color: #F9F9F9">
+                            <div class="col" style="background-color: #F9F9F9; border-right: 2px solid rgb(145, 145, 145);">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Men</a>
+                                <div class="dropdown-menu col" aria-labelledby="navbarDropdown">
+                                    <h1 class="dropdown-header" style="font-size: 25px;">Brands</h1>
+                                    <a class="dropdown-item" href="#">Gul Ahmad</a>
+                                    <a class="dropdown-item" href="#">Al Kareem</a>
+                                    <a class="dropdown-item" href="#">Khadi</a>
                                 </div>
                             </div>
-                        </li>
-                    </ul>
-                </div>
+
+                            <div class="col" style="border-right: 2px solid rgb(145, 145, 145);">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Women</a>
+                                <div class="dropdown-menu col" aria-labelledby="navbarDropdown">
+                                    <h1 class="dropdown-header" style="font-size: 25px;">Brands</h1>
+                                    <a class="dropdown-item" href="#">Gul Ahmad</a>
+                                    <a class="dropdown-item" href="#">Al Kareem</a>
+                                    <a class="dropdown-item" href="#">Khadi</a>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Kids</a>
+                                <div class="dropdown-menu col" aria-labelledby="navbarDropdown">
+                                    <h1 class="dropdown-header" style="font-size: 25px;">Brands</h1>
+                                    <a class="dropdown-item" href="#">Gul Ahmad</a>
+                                    <a class="dropdown-item" href="#">Al Kareem</a>
+                                    <a class="dropdown-item" href="#">Khadi</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
             </div>
-        </nav>
+        </div>
+    </nav>
+
+    <div class="godown-60" id="godown"></div>
+
+    <!-- Top Navigation bar ends-->
+
+    <!-- Showcase Slideshow Starts-->
+
+    <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel" data-interval="6000">
+        <ol class="carousel-indicators">
+            <li data-target="#carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel" data-slide-to="1"></li>
+            <li data-target="#carousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+                <a href="#">
+                     <picture>
+                      <source srcset="C:\Users\Lenovo\Documents\GitHub\idress\idressWebsite\images\model2000x857.png" media="(min-width: 1400px)">
+                      <source srcset="C:\Users\Lenovo\Documents\GitHub\idress\idressWebsite\images\model1400x514.png" media="(min-width: 769px)">
+                       <source srcset="C:\Users\Lenovo\Documents\GitHub\idress\idressWebsite\images\model800x343.png" media="(min-width: 577px)">
+                      <img srcset="C:\Users\Lenovo\Documents\GitHub\idress\idressWebsite\images\model600x257.png" alt="responsive image" class="d-block img-fluid">
+                    </picture>
+
+                    <div class="carousel-caption">
+                        <div style="color: black;">
+                            <p style="font-weight: bold; font-size: 3vw;">New Arrivals <br> From Pakistan's Top Brands</p>
+                        
+                            <span class="btn btn-sm btn-secondary" style="font-weight: bold; font-size: 3vw; background-color: #494D6A; color: white;"> Avaliable Now!</span>
+                        </div>
+                    </div>
+
+                </a>
+            </div>
+
+            <div class="carousel-item">
+                <a href="#">
+                     <picture>
+                      <source srcset="C:\Users\Lenovo\Documents\GitHub\idress\idressWebsite\images\kid2000x857.png" media="(min-width: 1400px)">
+                      <source srcset="C:\Users\Lenovo\Documents\GitHub\idress\idressWebsite\images\kid1400x514.png" media="(min-width: 769px)">
+                       <source srcset="C:\Users\Lenovo\Documents\GitHub\idress\idressWebsite\images\kid800x343.png" media="(min-width: 577px)">
+                      <img srcset="C:\Users\Lenovo\Documents\GitHub\idress\idressWebsite\images\kid600x257.png" alt="responsive image" class="d-block img-fluid">
+                    </picture>
+
+                    <div class="carousel-caption carousel-caption-custom-right">
+                        <div style="color: black;">
+                            <p style="font-weight: bold; font-size: 3vw;">New Arrivals <br> From Pakistan's Top Brands</p>
+                        
+                            <span class="btn btn-sm btn-secondary" style="font-weight: bold; font-size: 3vw; background-color: #D1CDC3; color: white;"> Avaliable Now!</span>
+
+                        </div>
+                    </div>
+
+                </a>
+            </div>
+
+            <div class="carousel-item">
+                <a href="#">
+                     <picture>
+                      <source srcset="C:\Users\Lenovo\Documents\GitHub\idress\idressWebsite\images\show2000x857.png" media="(min-width: 1400px)">
+                      <source srcset="C:\Users\Lenovo\Documents\GitHub\idress\idressWebsite\images\show1400x514.png" media="(min-width: 769px)">
+                       <source srcset="C:\Users\Lenovo\Documents\GitHub\idress\idressWebsite\images\show800x343.png" media="(min-width: 577px)">
+                      <img srcset="C:\Users\Lenovo\Documents\GitHub\idress\idressWebsite\images\show600x257.png" alt="responsive image" class="d-block img-fluid">
+                    </picture>
+
+                    <div class="carousel-caption" style="right: 15%; text-align: right; max-width: 370px; left: auto; padding:5px; top:30%; bottom: auto;">
+                        <div style="color: black;">
+                            <p style="font-weight: bold; font-size: 3vw;">New Arrivals <br> From Pakistan's Top Brands</p>
+                        
+                            <span class="btn btn-sm btn-secondary" style="font-weight: bold; font-size: 3vw; background-color: #FFE76C; color: white;"> Avaliable Now!</span>
+
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>      
+    </div>
+
+
+    <!--Showcase Slideshow ends-->
+        
 
 <!--Scripts for Bootstrap-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

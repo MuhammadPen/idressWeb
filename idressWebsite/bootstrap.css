@@ -5933,7 +5933,7 @@ button.close {
   list-style: none;
 }
 
-.carousel-indicators li {
+.carousel-indicators li { 
   position: relative;
   -ms-flex: 0 1 auto;
   flex: 0 1 auto;
