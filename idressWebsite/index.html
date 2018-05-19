@@ -12,7 +12,7 @@
     <style>
 
             body{
-                overflow: hidden;
+                overflow-x: hidden;
             }
 
             .list-group, .list-group-item{
@@ -71,45 +71,67 @@
                 height: 60px;
             }
 
-            @media (max-width: 992px) {
+            @media (max-width: 1200px) {
                 #search-input{
                     width: 100%;
                     margin-bottom: 5px;
                 }
             }
+
+            @media (max-width: 575.98px){
+                #dropdown-menu-custom-css{
+                    text-align: left;
+                }
+            }
             
     </style>
 
-    <script>
-    
-    $("#navMenu").resize(function () {
-        $('#godown').height($("#navMenu").height() + 10);
-    });
 
-    if ($("#navMenu").height() > $('#godown').height()) $('#godown').height($("#navMenu").height() + 10);
-    
-    </script>
-    
 </head>
 <body>
 
+    <!--Page Head (Brand Showcase) Starts-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-9" style="text-align: center;">
+                <img src="C:\Users\Lenovo\Documents\GitHub\idress\idressWebsite\images\idress2.png" class="img-fluid" alt="iDress. Suit Yourself." width="7%">
+                <h3>iDress. Suit Yourself.</h3>
+            </div>
+            <div class="col-sm-3">
+               
+            </div>
+        </div>
+    </div>
+    
+
+    <!--Page Head (Brand Showcase) Starts-->
+
     <!-- Top Navigation bar starts-->
 
-    <nav class="navbar navbar-dark navbar-expand-xl bg-dark fixed-top" style="padding: 0px;">
-        <a class="navbar-brand" href="#">
-            <img src="C:\Users\Lenovo\Documents\GitHub\idress\idressWebsite\images\idress2.png" class="d-block img-fluid" width="50px" alt="">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-dark navbar-expand-sm bg-dark sticky-top" style="padding: 0px;">
+        <button class="navbar-toggler" type="button" style="margin: 5px;" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <div class="container-fluid">
                 <ul class="navbar-nav mr-auto list-group" style="padding: 0px;">
                     <li class="nav-item dropdown list-group-item" style="padding: 0px;">
                         <div class="row" style="text-align: center;">
-                            <div class="col-xl-3" style=" background-color: #313D42; padding: 0px;">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Men</a>
+
+                            <div class="col-sm-4" id="dropdown-menu-custom-css" style=" background-color: #313D42; padding: 0px;">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-left: 10px; font-size: 18px;">Men</a>
+                                <div class="dropdown-menu col"  aria-labelledby="navbarDropdown" style="background-color: rgb(73, 90, 97);">
+                                    <h1 class="dropdown-header" style="font-size: 25px; color: white;">Brands</h1>
+                                    <hr>
+                                    <a class="dropdown-item" href="#" style="color: white;" >Gul Ahmad</a>
+                                    <a class="dropdown-item" href="#" style="color: white;" >Al Kareem</a>
+                                    <a class="dropdown-item" href="#" style="color: white;" >Khadi</a>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-4"  id="dropdown-menu-custom-css" style=" background-color: #313D42; padding: 0px;">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-left: 10px; font-size: 18px;">Women</a>
                                 <div class="dropdown-menu col" aria-labelledby="navbarDropdown" style="background-color: rgb(73, 90, 97);">
                                     <h1 class="dropdown-header" style="font-size: 25px; color: white;">Brands</h1>
                                     <hr>
@@ -119,8 +141,8 @@
                                 </div>
                             </div>
 
-                            <div class="col-xl-3" style=" background-color: #313D42; padding: 0px;">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Women</a>
+                            <div class="col-sm-4" id="dropdown-menu-custom-css" style="padding: 0px; background-color: #313D42;">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-left: 10px; font-size: 18px;">Kids</a>
                                 <div class="dropdown-menu col" aria-labelledby="navbarDropdown" style="background-color: rgb(73, 90, 97);">
                                     <h1 class="dropdown-header" style="font-size: 25px; color: white;">Brands</h1>
                                     <hr>
@@ -128,28 +150,6 @@
                                     <a class="dropdown-item" href="#" style="color: white;" >Al Kareem</a>
                                     <a class="dropdown-item" href="#" style="color: white;" >Khadi</a>
                                 </div>
-                            </div>
-
-                            <div class="col-xl-3" style="padding: 0px; background-color: #313D42;">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Kids</a>
-                                <div class="dropdown-menu col" aria-labelledby="navbarDropdown" style="background-color: rgb(73, 90, 97);">
-                                    <h1 class="dropdown-header" style="font-size: 25px; color: white;">Brands</h1>
-                                    <hr>
-                                    <a class="dropdown-item" href="#" style="color: white;" >Gul Ahmad</a>
-                                    <a class="dropdown-item" href="#" style="color: white;" >Al Kareem</a>
-                                    <a class="dropdown-item" href="#" style="color: white;" >Khadi</a>
-                                </div>
-                            </div>
-
-                            <div class="col-xl-3" style="background-color: #313D42;">
-                                
-                                <form class="form-inline" style="background-color: #313D42; padding-bottom: 0px; margin: 0px;">
-                                    <input class="form-control mr-sm-2" id="search-input" type="search" placeholder="Search" aria-label="Search">
-                                    <div class="col-lg-3">
-                                    <button class="btn btn-outline-success" id="search-button" type="submit"><i class="material-icons"> search</i></button>
-                                    </div>
-                                </form>
-                                
                             </div>
                         </div>
                     </li>
@@ -158,13 +158,13 @@
         </div>
     </nav>
 
-    <div class="godown-60" id="godown"></div>
+    
 
     <!-- Top Navigation bar ends-->
 
     <!-- Showcase Slideshow Starts-->
 
-    <div class="container-fluid" style="padding-right:0; padding-left:0; margin-right:auto; margin-left:auto;">
+    <div class="container-fluid" style="padding-right:0; padding-left:0; margin-right:auto; margin-left:auto; margin-top: 0px;">
         <div class="row no-gutter">
             <div class="col">
                 <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel" data-interval="3000">
