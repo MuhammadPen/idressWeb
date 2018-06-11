@@ -7,12 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="bootstrap.css">
     <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
     <style>
 
             body{
                 overflow-x: hidden;
+                background-color: rgb(226, 226, 226);
+                text-align: center;
+                
             }
 
             .list-group, .list-group-item{
@@ -71,16 +74,48 @@
                 height: 60px;
             }
 
-            @media (max-width: 1200px) {
-                #search-input{
-                    width: 100%;
-                    margin-bottom: 5px;
-                }
+            #iDressLogo{
+                margin-left: 33%;
+                margin-top: 5px;
             }
+
+            #searchButton{
+                margin-left: 70%; 
+                padding: 7%;
+            }
+
+            #fillerRow{
+                margin: 6%;
+            }
+
+            #shoppingCart{
+                padding-left: 0px;
+            }
+
+            #newArrivalCol{
+                overflow: hidden;
+            }
+            
 
             @media (max-width: 575.98px){
                 #dropdown-menu-custom-css{
                     text-align: left;
+                }
+                #iDressLogo{
+                    margin: auto;
+                }
+                #searchButton{
+                    margin-left: 0%;
+                    padding: 5px;
+                    width: 100%;
+                    height: 5%;
+                }
+                #fillerRow{
+                    display: none;
+                }
+                #shoppingCart{
+                    padding-left: 5%;
+                    display: block;
                 }
             }
             
@@ -94,17 +129,26 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-sm-9" style="text-align: center;">
-                <img src="C:\Users\Lenovo\Documents\GitHub\idress\idressWebsite\images\idress2.png" class="img-fluid" alt="iDress. Suit Yourself." width="7%">
-                <h3>iDress. Suit Yourself.</h3>
+                <img src="C:\Users\Lenovo\Documents\GitHub\idress\idressWebsite\images\idress2.png" class="img-fluid" id="iDressLogo" alt="iDress. Dress Yourself." width="7%">
+                <h3 id="iDressLogo" style="font-size: 150%;">iDress. Dress Yourself.</h3>
             </div>
             <div class="col-sm-3">
-               
+                <div class="container-fluid">
+                    <div class="row"> <span  id="fillerRow"></span> </div>
+                    <div class="row justify-content-center align-items-center">
+                        <div class="col">
+                            <button class="btn btn-outline-dark my-2 my-sm-0" id="searchButton" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                        </div>
+                        <div id="shoppingCart">
+                                <a href="#" style="color:rgb(41, 41, 41);"><i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
     
-
-    <!--Page Head (Brand Showcase) Starts-->
+    <!--Page Head (Brand Showcase) Ends-->
 
     <!-- Top Navigation bar starts-->
 
@@ -241,11 +285,35 @@
     </div>
 
     <!--Showcase Slideshow ends-->
+
+    <!-- New Arrivals Start-->
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2 style="padding: 3%;">New Arrivals</h2>
+                </div>
+            </div>
+            <div class="row" style="height: 5vw;">
+                <div class="col-sm-8" id="newArrivalCol">
+                    <img src="C:\Users\Lenovo\Documents\GitHub\idress\idressWebsite\images\newArrival4.jpg" class="img-fluid">
+                </div>
+                <div class="col-sm-4" id="newArrivalCol">
+                    <img src="C:\Users\Lenovo\Documents\GitHub\idress\idressWebsite\images\newArrival6.jpg" class="img-fluid">
+                </div>
+            </div>
+            <div class="row">
+
+            </div>
+        </div>
+
+    <!-- New Arrivals Ends-->
         
 
-<!--Scripts for Bootstrap-->
+<!--Scripts for Bootstrap Starts-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+<!--Scripts for Bootstrap Ends-->
 </body>
 </html>
